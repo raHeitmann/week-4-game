@@ -23,6 +23,14 @@ function crystalNumbers ()
 
 }
 
+function winningNumber () 
+
+{
+	var result = Math.floor(Math.random()*120 + 19);
+	return result;
+
+}
+
 
 crystal1 = crystalNumbers();
 	console.log(crystal1);
@@ -34,28 +42,40 @@ crystal4 = crystalNumbers();
 	console.log(crystal4);
 
 
+winNum = winningNumber();
+	$("#targetNum").html('Winning Number: '+winNum);
+
+
 
 $("#crystal1").click(function() {
 
-	console.log("you just added "+crystal1);
+	$("#added").html("you just added "+crystal1);
+	yourNum = yourNum + crystal1;
+	$('#scoreNum').html('Your Number: '+yourNum);
   
 });
 
 $("#crystal2").click(function() {
 
-	console.log("you just added "+crystal2);
+	$("#added").html("you just added "+crystal2);
+	yourNum = yourNum + crystal2;
+	$('#scoreNum').html('Your Number: '+yourNum);
   
 });
 
 $("#crystal3").click(function() {
 
-	console.log("you just added "+crystal3);
+	$("#added").html("you just added "+crystal3);
+	yourNum = yourNum + crystal3;
+	$('#scoreNum').html('Your Number: '+yourNum);
   
 });
 
 $("#crystal4").click(function() {
 
-	console.log("you just added "+crystal4);
+	$("#added").html("you just added "+crystal4);
+	yourNum = yourNum + crystal4;
+	$('#scoreNum').html('Your Number: '+yourNum);
   
 });
 
