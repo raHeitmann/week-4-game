@@ -3,10 +3,11 @@
 <head>
 	<title>Crytal Collector!</title>
 
-
-	<script type='text/javascript' src='assets/javascript/game.js'></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type='text/javascript' src='assets/javascript/game.js'></script>
+	
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 <body>
@@ -42,28 +43,29 @@
 		<div class="col-md-6" id="instructions">
 
 			<section id="instructionText">
-				instructions go here
+				Over there       are four crystals. Each is given a random number from the start, hidden from view. Click on the crystals to add their value to YOUR NUMBER. If you can match it with the WINNING NUMBER, then you win! <br>
+				However, if you go over the WINNING NUMBER, you will lose...
 			</section>
 
 		</div>
 
 		<div class="col-md-6" id="crystals">
 
-			<section class="crystal" id="crystal1">
-				<img src="assets/images/greenEmerald.jpg" id="greenEmerald">
-			</section>
+				<div class="crystalBox" id="crystal1">
+				<img class="crystalPic" src="assets/images/greenEmerald.jpg" id="greenEmerald">
+				</div>
 
-			<section class="crystal" id="crystal2">
-				<img src="assets/images/purpleEmerald.jpg" id="purpleEmerald">
-			</section>
+				<div class="crystalBox" id="crystal2">
+				<img class="crystalPic" src="assets/images/purpleEmerald.jpg" id="purpleEmerald">
+				</div>
 			
-			<section class="crystal" id="crystal3">
-				<img src="assets/images/redEmerald.jpg" id="redEmerald">
-			</section>
-			
-			<section class="crystal" id="crystal4">
-				<img src="assets/images/blueEmerald.jpg" id="blueEmerald">
-			</section>
+				<div class="crystalBox" id="crystal3">
+				<img class="crystalPic" src="assets/images/redEmerald.jpg" id="redEmerald">
+				</div>
+
+				<div class="crystalBox" id="crystal4">
+				<img class="crystalPic" src="assets/images/blueEmerald.jpg" id="blueEmerald">
+				</div>
 
 			
 		</div>
