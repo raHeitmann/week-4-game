@@ -1,10 +1,68 @@
+*
+{
+	color: white;
+	font-size: 30px;
+	
+
+}
+
+body
+
+{
+	background-image: url('../images/spaceBackground.jpg');
+
+}
+
+.rainbow {
+
+	font-size: 98px;
+	font-style: italic;
+	text-align: center;
+
+
+   /* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 1s infinite; 
+  
+  /* Internet Explorer */
+  -ms-animation: rainbow 1s infinite;
+  
+  /* Standar Syntax */
+  animation: rainbow 1s infinite; 
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}	
+}
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}	
+}
+
+/* Standar Syntax */
+@keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}	
+}
+
 
 
 .crystalPic
 
 {
-	height:100px;
-	width:100px;
+	height:190px;
+	width:190px;
 	float:left;
 }
 
@@ -22,18 +80,21 @@
 
 }
 
-
-
-
 .crystalBox
 
 {
-	height:100px;
-	width:100px;
+	height:200px;
+	width:200px;
 	float:left;
 }
 
 
 
+
+
+section 
+{
+	background-color: rgba(127,127,127,.3);
+}
 
 

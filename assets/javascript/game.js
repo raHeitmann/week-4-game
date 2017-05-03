@@ -2,6 +2,44 @@ $( document ).ready(function() {
     console.log( "ready!" );
 
 
+//solely for rainbow text......
+
+
+
+ $.fn.rainbowize = function() {
+    return this.each(function() {
+      var rainbowtext = '';
+      var hue=0;
+      var step=0;
+ 
+      // get the current text inside element
+      var text = $(this).text();
+ 
+      // hue is 360 degrees
+      if (text.length > 0)
+        step = 360 / (text.length);
+ 
+      // iterate the whole 360 degrees
+      for (var i = 0; i < text.length; i++)
+      {
+        rainbowtext = rainbowtext + '<span style="color:' + color_from_hue(hue) + '">' + text.charAt(i) + '</span>';
+        hue += step;
+      }
+ 
+      $(this).html(rainbowtext);
+    });
+  };
+
+
+
+
+
+
+
+
+
+
+
 
 var wins = 0;
 var losses = 0; 
